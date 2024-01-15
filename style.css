@@ -36,7 +36,6 @@ ul li {
   width: 48px;
   height: 56.008px;
   object-fit: contain;
-  /* border: 2px solid crimson; */
 }
 .header_logo span {
   color: #ff5400;
@@ -48,4 +47,36 @@ ul li {
   display: flex;
   align-items: center;
   gap: 44px;
+}
+.menu_mobile_device {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+    border: 2px solid crimson;
+  }
+  .header_logo {
+    padding: 20px 0 20px 20px;
+    gap: 9.95px;
+    font-size: 21.543px;
+  }
+  .header_logo img {
+    width: 28.724px;
+    height: 33.516px;
+    object-fit: contain;
+  }
+  .header_menu {
+    display: none;
+  }
+  .header_menu_mobile_device {
+    padding: 20px 20px 20px 0;
+  }
+  .header_menu_mobile_device img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
 }
