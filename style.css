@@ -13,6 +13,9 @@ a {
 ul li {
   list-style: none;
 }
+section {
+  margin-bottom: 100px;
+}
 /* HEADER  STYLES  */
 .header {
   padding: 50px 0;
@@ -50,6 +53,119 @@ ul li {
 }
 .header_menu_mobile_device {
   display: none;
+}
+/* BANNER SECTION STYLES  */
+.banner_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_container {
+  width: 1170px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  border-radius: 16px;
+  position: relative;
+}
+.banner_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+
+  z-index: -1;
+}
+.banner_title {
+  color: #fff;
+  font-size: 4rem;
+}
+.banner_description {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  width: 676px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+.banner_from {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.first_inp {
+  padding-left: 16px;
+  width: 174px;
+  height: 52px;
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: rgba(19, 19, 24, 0.5);
+}
+
+.input {
+  padding-left: 15px;
+  padding-right: 14px;
+  width: 174px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 74px;
+  background: #fff;
+  border-radius: 8px;
+}
+.input input {
+  width: 50%;
+  color: #fff;
+  border: none;
+  color: rgba(19, 19, 24, 0.5);
+  outline: none;
+  font-size: 1rem;
+}
+.input img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.input_btn {
+  width: 174px;
+  height: 52px;
+  background: #ff5400;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.input_btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 @media screen and (max-width: 600px) {
   .header {
