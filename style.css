@@ -234,6 +234,7 @@ ul li {
   color: #5a5a5d;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 26px;
 }
 .popular_tour_btn {
   margin-top: 8px;
@@ -303,5 +304,38 @@ ul li {
   }
   .inp {
     min-width: 255px;
+  }
+  /* POPULAR TOUR SECTION RESPONSIVE STYLES  */
+
+  .popular_tour_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .popular_tour_text_content {
+    padding: 0 20px;
+    width: 100%;
+    gap: 16px;
+  }
+  .popular_tour_title {
+    font-size: 1.25rem;
+  }
+  .popular_tour_subtitle {
+    font-size: 14px;
+  }
+  .popular_tour_text_content ul {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .popular_tour_description br {
+    display: none;
+    line-height: 24px;
+  }
+  .popular_tour_text_content ul li {
+    font-size: 14px;
+  }
+  .popular_img_content {
+    margin: 0 20px;
+    width: 90%;
   }
 }
