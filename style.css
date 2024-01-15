@@ -48,7 +48,7 @@ ul li {
   align-items: center;
   gap: 44px;
 }
-.menu_mobile_device {
+.header_menu_mobile_device {
   display: none;
 }
 @media screen and (max-width: 600px) {
