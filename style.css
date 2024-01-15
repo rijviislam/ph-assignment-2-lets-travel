@@ -311,6 +311,7 @@ ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
   }
   .popular_tour_text_content {
     padding: 0 20px;
@@ -337,5 +338,6 @@ ul li {
   .popular_img_content {
     margin: 0 20px;
     width: 90%;
+    height: 342px;
   }
 }
