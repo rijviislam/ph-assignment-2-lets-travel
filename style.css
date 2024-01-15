@@ -13,9 +13,9 @@ a {
 ul li {
   list-style: none;
 }
-section {
+/* section {
   margin-bottom: 100px;
-}
+} */
 /* HEADER  STYLES  */
 .header {
   padding: 50px 0;
@@ -56,6 +56,7 @@ section {
 }
 /* BANNER SECTION STYLES  */
 .banner_section {
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,11 +169,11 @@ section {
   object-fit: contain;
 }
 @media screen and (max-width: 600px) {
+  /* HEADER SECTION RESPONSIVE STYLES  */
   .header {
     padding: 0;
     gap: 0;
     justify-content: space-between;
-    border: 2px solid crimson;
   }
   .header_logo {
     padding: 20px 0 20px 20px;
@@ -195,5 +196,26 @@ section {
     width: 24px;
     height: 24px;
     object-fit: contain;
+  }
+  /* BANNER SECTION RESPONSIVE STYLES  */
+
+  .banner_container {
+    /* padding: 0 20px; */
+    margin: 0 20px;
+  }
+  .banner_title {
+    font-size: 22px;
+  }
+  .banner_description {
+    margin-top: 8px;
+    margin-bottom: 32px;
+    width: 304px;
+  }
+  .banner_from {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .inp {
+    min-width: 255px;
   }
 }
