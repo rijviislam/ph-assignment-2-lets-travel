@@ -13,9 +13,19 @@ a {
 ul li {
   list-style: none;
 }
-/* section {
-  margin-bottom: 100px;
-} */
+/* SHARED STYLES  */
+.primary_btn {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}
 /* HEADER  STYLES  */
 .header {
   padding: 50px 0;
@@ -50,6 +60,20 @@ ul li {
   display: flex;
   align-items: center;
   gap: 44px;
+}
+.header_menu ul li {
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-weight: 400;
+  transition: font-weight 0.4s ease-in-out;
+}
+.header_menu ul li:hover {
+  color: #ff5400;
+  font-weight: 700;
+}
+.header_menu ul li:nth-child(1) {
+  color: #ff5400;
+  font-weight: 700;
 }
 .header_menu_mobile_device {
   display: none;
@@ -168,6 +192,69 @@ ul li {
   height: 24px;
   object-fit: contain;
 }
+/* POPULAR TOUR SECTION STYLES  */
+.popular_tours {
+  display: flex;
+  justify-content: center;
+}
+.popular_tour_container {
+  display: flex;
+  gap: 53px;
+}
+.popular_tour_text_content {
+  width: 577px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.popular_tour_title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.popular_tour_subtitle {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.popular_tour_text_content ul {
+  width: 525px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.popular_tour_text_content ul li {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: disc;
+}
+.popular_tour_description {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.popular_tour_btn {
+  margin-top: 8px;
+  transition: all ease-in-out 0.4s;
+  border: 1px solid #ff5400;
+}
+.popular_tour_btn:hover {
+  background-color: #fff;
+  color: #ff5400;
+  border: 1px solid #ff5400;
+}
+.popular_img_content {
+  width: 540px;
+  height: 550px;
+  border-radius: 16px;
+}
+.popular_img_content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 @media screen and (max-width: 600px) {
   /* HEADER SECTION RESPONSIVE STYLES  */
   .header {
@@ -200,7 +287,6 @@ ul li {
   /* BANNER SECTION RESPONSIVE STYLES  */
 
   .banner_container {
-    /* padding: 0 20px; */
     margin: 0 20px;
   }
   .banner_title {
