@@ -780,4 +780,32 @@ ul li {
     font-size: 14px;
     line-height: 24px;
   }
+  /* PERFECT PLACES SECTION RESPONSIVE STYLES  */
+  .perfect_place_section {
+    margin-top: 24px;
+  }
+  .perfect_place_container {
+    flex-direction: column;
+  }
+  .perfect_place_text_content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .perfect_place_title {
+    font-size: 20px;
+  }
+  .perfect_place_subtitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .perfect_place_list li {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .perfect_place_img_content {
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+  }
 }
