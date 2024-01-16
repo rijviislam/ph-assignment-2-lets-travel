@@ -806,6 +806,23 @@ ul li {
   align-items: center;
   justify-content: center;
 }
+.footer_logo {
+  width: 240.673px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #131318;
+  font-size: 32px;
+  font-weight: 800;
+}
+.footer_logo img {
+  width: 40px;
+  height: 100%;
+}
+.footer_logo span {
+  color: #ff5400;
+}
 .footer_subtitle {
   margin-top: 15px;
   margin-bottom: 33px;
@@ -814,13 +831,12 @@ ul li {
 .footer_social_icons {
   display: flex;
   gap: 20px;
-  margin-bottom: 40px;
 }
 .icon {
   font-size: 40px;
 }
 .footer_dash {
-  margin-bottom: 50px;
+  margin: 50px 0;
   width: 872px;
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
@@ -1116,5 +1132,34 @@ ul li {
   }
   .hotel_price {
     font-size: 20px;
+  }
+  /* FOOTER SECTION RESPONSIVENESTYLES  */
+  .footer_section {
+    margin-top: 40px;
+  }
+  .footer_container {
+    width: 100%;
+    height: auto;
+  }
+  .footer_logo {
+    margin-top: 32px;
+  }
+  .footer_subtitle br {
+    display: none;
+  }
+  .footer_subtitle {
+    margin: 16px 0;
+    padding: 0 40px;
+  }
+
+  .footer_social_icons {
+    margin: 0;
+  }
+  .footer_dash {
+    margin: 24px 0;
+    width: 335px;
+  }
+  .copyright {
+    margin-bottom: 31.28px;
   }
 }
