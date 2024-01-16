@@ -35,6 +35,13 @@ ul li {
   font-weight: 800;
   border: none;
   cursor: pointer;
+  border: 1px solid #ff5400;
+  transition: background 0.4s ease-in-out;
+}
+.primary_btn:hover {
+  background: #fff;
+  color: #ff5400;
+  border: 1px solid #ff5400;
 }
 /* HEADER  STYLES  */
 .header {
@@ -502,7 +509,7 @@ ul li {
   border-radius: 18px;
   z-index: -1;
 }
-/* choose US SECTION STYLES  */
+/* CHOOSE US SECTION STYLES  */
 .choose_us_section {
   margin-top: 100px;
 }
@@ -557,6 +564,122 @@ ul li {
   margin-bottom: 32px;
   overflow: hidden;
   /* line-height: 26px; */
+}
+/* DISCOUNT SECTION STYLES */
+.discount_section {
+  margin-top: 100px;
+}
+.discount_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.discount_title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.discount_subtitle {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+.discount_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.discount_card {
+  width: 1170px;
+  height: 500px;
+  position: relative;
+  border-radius: 16px;
+}
+.discount_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: url("./Images/Group\ 39.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.discount_card:nth-child(2) {
+  background: url("./Images/Group\ 40.png");
+}
+.discount_card:nth-child(3) {
+  background: url("./Images/Group\ 39.png");
+}
+.discount_overlay_card {
+  padding: 50px;
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  width: 579px;
+  height: 389px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.second_overlay_card {
+  padding: 50px;
+  position: absolute;
+  top: 56px;
+  left: 56px;
+  width: 579px;
+  height: 389px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.time_user_location_row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.time {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.user {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.card_svg img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.discount_overlay_title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.discount_overlay_description {
+  margin-bottom: 16px;
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.discount_price {
+  margin-bottom: 24px;
+  color: #ff5400;
+  font-weight: 800;
+  font-size: 1.25rem;
 }
 /* PERFECT PLACE SECTION STYLES */
 .perfect_place_section {
