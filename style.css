@@ -1089,7 +1089,7 @@ ul li {
     font-size: 14px;
   }
   .newsletter_dash {
-    width: 288px;
+    width: 100%;
   }
   .newsletter_form input {
     width: 100%;
