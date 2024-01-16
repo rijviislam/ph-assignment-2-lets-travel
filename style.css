@@ -607,6 +607,7 @@ ul li {
 .perfect_place_vdo_content iframe {
   width: 100%;
   height: 100%;
+  border-radius: 16px;
   object-fit: contain;
 }
 /* NEWSLETTER SECTION STYLES  */
@@ -791,6 +792,44 @@ ul li {
 .hotel_summery {
   width: 273px;
   height: auto;
+}
+/* FOOTER SECTION STYLES  */
+.footer_section {
+  margin-top: 100px;
+  background: rgba(19, 19, 24, 0.05);
+}
+.footer_container {
+  width: 100%;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer_subtitle {
+  margin-top: 15px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+.footer_social_icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.icon {
+  font-size: 40px;
+}
+.footer_dash {
+  margin-bottom: 50px;
+  width: 872px;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.1);
+}
+.copyright {
+  color: #131318;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
 }
 @media screen and (max-width: 600px) {
   /* HEADER SECTION RESPONSIVE STYLES  */
@@ -990,6 +1029,7 @@ ul li {
     padding: 0 20px;
     width: 100%;
     height: 424px;
+    border-radius: 16px;
   }
   /* NEWSLETTER SECTION RESPONSIVE STYLES  */
   .newsletter_section {
@@ -1034,12 +1074,10 @@ ul li {
   /* RECOMMENDED HOTELS SECTION RESPONSIVENESTYLES  */
   .recommended_hotels_section {
     margin-top: 24px;
-    /* display: none; */
   }
   .recommended_hotels_container {
     width: 100%;
   }
-
   .recommended_hotel_title {
     font-size: 20px;
   }
