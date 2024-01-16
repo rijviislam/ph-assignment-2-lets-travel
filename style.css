@@ -1034,7 +1034,7 @@ ul li {
   /* RECOMMENDED HOTELS SECTION RESPONSIVENESTYLES  */
   .recommended_hotels_section {
     margin-top: 24px;
-    display: none;
+    /* display: none; */
   }
   .recommended_hotels_container {
     width: 100%;
@@ -1055,15 +1055,23 @@ ul li {
   .recommended_hotel {
     margin: 0 20px;
     width: 100%;
-    border: 2px solid crimson;
   }
   .hotel {
-    padding: 0 20px;
-    border: 2px solid black;
+    width: 90%;
+    margin: 0 20px;
+    overflow: hidden;
   }
   .hotel_image {
-    width: 200px;
+    width: 50%;
     height: auto;
+  }
+  .booking_details {
+    padding: 5px;
+    width: 50%;
+  }
+  .hotel_summery {
+    width: 100%;
+    font-size: 14px;
   }
   .hotle_title {
     font-size: 18px;
