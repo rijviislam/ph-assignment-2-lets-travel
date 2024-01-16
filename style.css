@@ -203,8 +203,9 @@ ul li {
   object-fit: contain;
 }
 /* POPULAR TOUR SECTION STYLES  */
-.popular_tours {
+.popular_tours_section {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .popular_tour_container {
@@ -536,6 +537,7 @@ ul li {
   border: 1px solid rgba(41, 206, 246, 0.2);
   background: rgba(41, 206, 246, 0.05);
 }
+
 .choose_us_card img {
   width: 64px;
   height: 64px;
@@ -552,7 +554,9 @@ ul li {
   color: #5a5a5d;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  /* line-height: 26px; */
 }
 /* PERFECT PLACE SECTION STYLES */
 .perfect_place_section {
@@ -609,6 +613,62 @@ ul li {
   height: 100%;
   border-radius: 16px;
   object-fit: contain;
+}
+/* OUR TRAVEL STROY SECTION STYLES  */
+.travel_story {
+  margin-top: 100px;
+}
+.travel_story_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.travel_story_title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.travel_story_subtitle {
+  margin: 10px 0;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.travel_story_content {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.travel_story_card {
+  width: 350px;
+  height: 300px;
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    rgba(19, 19, 24, 0.2) 80%,
+    rgba(19, 19, 24, 0.2) 100%
+  );
+  border-radius: 8px;
+}
+.travel_story_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.travel_story_card_title_date {
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  z-index: 999;
+  color: #fff;
 }
 /* NEWSLETTER SECTION STYLES  */
 .newsletter_section {
@@ -710,92 +770,10 @@ ul li {
 .save span {
   font-weight: 800;
 }
-/* RECOMMENDED HOTELS SECTION STYLES  */
-.recommended_hotels_section {
-  margin-top: 100px;
-}
-.recommended_hotels_container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.recommended_hotel_title {
-  color: #131318;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-.recommended_hotel_subtitle {
-  margin-top: 24px;
-  margin-bottom: 48px;
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
-}
-.recommended_hotel {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.hotel {
-  width: 540px;
-  height: 315px;
-  display: flex;
-  gap: 10px;
-  border-radius: 16px;
-  border: 1px solid rgba(41, 206, 246, 0.2);
-  background: rgba(41, 206, 246, 0.05);
-}
-.hotel_image {
-  width: 230px;
-  height: 315px;
-}
-.hotel_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-}
-.booking_details {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.hotel_title_price {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.title_review {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.hotle_title {
-  color: #131318;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 800;
-}
-.review i {
-  color: #ff5400;
-}
-.hotel_price {
-  font-size: 36px;
-  font-weight: 700;
-}
-.hotel_summery {
-  width: 273px;
-  height: auto;
-}
+
 /* FOOTER SECTION STYLES  */
 .footer_section {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background: rgba(19, 19, 24, 0.05);
 }
 .footer_container {
@@ -837,7 +815,7 @@ ul li {
 }
 .footer_dash {
   margin: 50px 0;
-  width: 872px;
+  width: 80%;
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
 }
@@ -847,6 +825,27 @@ ul li {
   font-size: 1rem;
   font-weight: 300;
 }
+/* PARTNER SECTION STYLES  */
+
+.partner_section {
+  margin-top: 100px;
+}
+.partner_container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.partner_container img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+}
+
 @media screen and (max-width: 600px) {
   /* HEADER SECTION RESPONSIVE STYLES  */
   .header {
@@ -877,9 +876,16 @@ ul li {
     object-fit: contain;
   }
   /* BANNER SECTION RESPONSIVE STYLES  */
-
+  .banner_section {
+    padding: 0 20px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
   .banner_container {
-    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .banner_title {
     font-size: 22px;
@@ -897,7 +903,6 @@ ul li {
     min-width: 255px;
   }
   /* POPULAR TOUR SECTION RESPONSIVE STYLES  */
-
   .popular_tour_container {
     flex-direction: column;
     justify-content: center;
@@ -917,7 +922,7 @@ ul li {
   }
   .popular_tour_text_content ul {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
   }
   .popular_tour_description br {
     display: none;
@@ -1047,6 +1052,27 @@ ul li {
     height: 424px;
     border-radius: 16px;
   }
+  /* OUR TRAVEL STORY RESPONSIVE STYLES  */
+  .travel_story {
+    margin-top: 24px;
+  }
+  .travel_story_subtitle br {
+    display: none;
+  }
+  .travel_story_title {
+    font-size: 20px;
+  }
+  .travel_story_subtitle {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .travel_story_content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .travel_story_card {
+    width: 90%;
+  }
   /* NEWSLETTER SECTION RESPONSIVE STYLES  */
   .newsletter_section {
     margin-top: 24px;
@@ -1075,74 +1101,48 @@ ul li {
   .newsletter_img_content {
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   .save {
     width: 60%;
     height: 40%;
-    top: 80px;
-    left: 120px;
+    top: 120px;
+    left: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 15.854px;
+  }
+  .save span {
+    font-size: 21.138px;
   }
 
-  /* RECOMMENDED HOTELS SECTION RESPONSIVENESTYLES  */
-  .recommended_hotels_section {
+  /* PARTNER SECTION RESPONSIVE STYLES  */
+  .partner_section {
     margin-top: 24px;
   }
-  .recommended_hotels_container {
-    width: 100%;
+  .partner_container {
+    flex-direction: column;
   }
-  .recommended_hotel_title {
-    font-size: 20px;
-  }
-  .recommended_hotel_subtitle br {
-    display: none;
-  }
-  .recommended_hotel_subtitle {
-    padding: 0 33px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: 14px;
-  }
-  .recommended_hotel {
-    margin: 0 20px;
-    width: 100%;
-  }
-  .hotel {
-    width: 90%;
-    margin: 0 20px;
-    overflow: hidden;
-  }
-  .hotel_image {
-    width: 50%;
-    height: auto;
-  }
-  .booking_details {
-    padding: 5px;
-    width: 50%;
-  }
-  .hotel_summery {
-    width: 100%;
-    font-size: 14px;
-  }
-  .hotle_title {
-    font-size: 18px;
-  }
-  .hotel_price {
-    font-size: 20px;
-  }
-  /* FOOTER SECTION RESPONSIVENESTYLES  */
+  /* FOOTER SECTION RESPONSIVE STYLES  */
   .footer_section {
     margin-top: 40px;
   }
   .footer_container {
     width: 100%;
-    height: auto;
   }
   .footer_logo {
     margin-top: 32px;
+    font-size: 21.543px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_logo img {
+    width: 28.724px;
+    height: 33.516px;
   }
   .footer_subtitle br {
     display: none;
@@ -1156,8 +1156,9 @@ ul li {
     margin: 0;
   }
   .footer_dash {
+    width: 80%;
     margin: 24px 0;
-    width: 335px;
+    padding: 0 20px;
   }
   .copyright {
     margin-bottom: 31.28px;
