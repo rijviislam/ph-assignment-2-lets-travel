@@ -637,7 +637,6 @@ ul li {
   width: 579px;
   height: 389px;
   border-radius: 16px;
-  border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(2.5px);
 }
