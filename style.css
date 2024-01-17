@@ -1194,7 +1194,7 @@ ul li {
   }
   .time_user_location_row {
     flex-wrap: wrap;
-    gap: 0;
+    gap: 23px;
   }
   .discount_overlay_title {
     margin-top: 18px;
